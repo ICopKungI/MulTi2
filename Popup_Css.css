@@ -1,3 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 h1 {
   text-align: center;
   font-family: Tahoma, Arial, sans-serif;
@@ -20,14 +26,14 @@ h1 {
   font-size: 1em;
   padding: 10px;
   color: #fff;
-  border: 2px solid #06D85F;
+  border: 2px solid #c50e0e;
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .button:hover {
-  background: #06D85F;
+  background: #c50e0e;
 }
 
 .overlay {
@@ -49,10 +55,8 @@ h1 {
 .popup {
   	margin: 70px auto;
   	padding: 20px;
-  	background-image: url("https://dl.dropbox.com/s/07bdparfbhpcl7d/image-02.png");
-  	background-repeat: no-repeat;
-  	background-position:center;
-  	border-radius: 5px;
+  	background: #000000f0;
+  	border-radius: 15px;
   	width: 50%;
   	transition: all 5s ease-in-out;
 	  height:75vh;
@@ -67,7 +71,7 @@ h1 {
 
 .popup h2 {
   margin-top: 0;
-  color: #333;
+  color: white;
   font-family: Tahoma, Arial, sans-serif;
   z-index: 10001;
 }
@@ -79,10 +83,10 @@ h1 {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #a2a2a27d;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #c50e0e;
 }
 .popup .content {
   max-height: 50%;

@@ -1,22 +1,51 @@
 <!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="Popup_Css.css"/>
+<!------------------------------------------------------->
 <div id="popup1" class="overlay">
 	<div class="popup">
-		<h2>หัวข้อหลัก</h2>
+			<center>
+				<h2>คำถาม...</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>ตัวเลือกที่ 1...</label>
+    					<label class="text-02"><input type="radio" name="optradio">ตัวเลือกที่ 2...</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
 		<a class="close" href="#">&times;</a>
 			<center>
-				<img src="ลิงค์รูปภาพ">
+				<p class="text-01">หัวข้อหลัก...</p>
+				<img class="mySlides" src="ลิงค์รูปภาพ"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
     			<div class="content">
-    			<p class="text-01">ในกรณีที่มีหัวข้อรอง</p><br>
-    			<p class="text-02">เนื้อหา</p>
+    				<h2>ในกรณีที่มีหัวข้อรอง...</h2><br>
+    				<p class="text-02">เนื้อหา...</p>
     			</div>
 			</center>
 	</div>
 </div>
-<style type="text/css">
-	body {
-  		font-family: Arial, sans-serif;
-  		background: url(ลิงค์รูปภาพพื้นหลัง) no-repeat;
-  		background-size: cover;
-  		height: 100vh;
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       	x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    	x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
 	}
-</style>
+</script>
