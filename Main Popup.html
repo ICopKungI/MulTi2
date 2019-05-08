@@ -25,11 +25,11 @@
 		<a class="close" href="#">&times;</a>
 			<center>
 				<p class="text-01">หัวข้อหลัก...</p>
-				<img class="mySlides" src="ลิงค์รูปภาพ"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
     			<div class="content">
     				<h2>ในกรณีที่มีหัวข้อรอง...</h2><br>
     				<p class="text-02">เนื้อหา...</p>
-    			</div>
+    			</div><br>
+				<img class="mySlides" src="ลิงค์รูปภาพ"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
 			</center>
 	</div>
 </div>
@@ -41,11 +41,12 @@
     	var i;
     	var x = document.getElementsByClassName("mySlides");
     	for (i = 0; i < x.length; i++) {
-       	x[i].style.display = "none";  
+       		x[i].style.display = "none";  
     	}
     	myIndex++;
     	if (myIndex > x.length) {myIndex = 1}    
-    	x[myIndex-1].style.display = "block";  
+    		x[myIndex-1].style.display = "block";  
     	setTimeout(carousel, 2000); // Change image every 2 seconds
 	}
 </script>
+
