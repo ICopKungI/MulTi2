@@ -23,7 +23,7 @@ h1 {
 }
 
 .button {
-  font-size: 1em;
+  font-size: 2rem;
   padding: 10px;
   color: #fff;
   border: 2px solid #c50e0e;
@@ -57,9 +57,8 @@ h1 {
   	padding: 20px;
   	background: #000000f0;
   	border-radius: 15px;
-  	width: 50%;
-  	transition: all 2.5s ease-in-out;
-	  height:75vh;
+  	width: 120%;
+	  height:90vh;
 	  margin:auto;
 	  top:0px;
 	  right:0px;
