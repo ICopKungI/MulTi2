@@ -1,0 +1,56 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">กลัวอะไรมากกว่ากัน</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>ค้อน</label>
+    					<label class="text-02"><input type="radio" name="optradio">หนู</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">Criminal Testicle Transplants</p>
+    			<div class="content">
+    				
+    				<p class="text-02">Leo Stanley เป็นหัวหน้านักวิทยาศาสตร์แห่งเรือนจำ  San Quentin เขาเชื่อว่าผู้ชายมักจะก่ออาชญากรรมเพราะว่ามีฮอร์โมนเพศชายน้อยเกินไป ดังนั้นเขาจึงพิสูจน์ทฤษฎีของเขา โดยติดอัณฑะเพิ่มเข้าให้กับนักโทษชายเพื่อเป็นการเพิ่มฮอร์โมน แถมในบางครั้ง อัณฑะของมนุษย์มีไม่เพียงพอ เขาก็จะใช้อัณฑะของสัตว์แทน </p>
+    			</div><br>
+				<img class="mySlides" src="image.jpg">
+                <img class="mySlides" src="Job2-33.jpg">
+                <img class="mySlides" src="r_1488519342.jpg">
+                <img class="mySlides" src="r0_3_1200_678_w1200_h678_fmax.jpg">
+                <img class="mySlides" src="Testicle-Transplant-and-Testosterone-Injection-Experiment.jpg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+
