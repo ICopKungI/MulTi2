@@ -1,0 +1,60 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">คุณถูกสั่งให้ไปตัดนิ้วคนมาหนึ่งนิ้ว ทำตามจะไม่ถูกตัดมือ ไม่ทำตามจะถูกตัดมือ</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>ตัดนิ้วคน</label>
+    					<label class="text-02"><input type="radio" name="optradio">ไม่ตัดนิ้วคน</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">LOST (Mustard) Gas Experiments</p>
+    			<div class="content">
+    				
+    				<p class="text-02"> การทดลองแก๊สมัสตาร์ด Mustard gas ในสงครามใช้แบบไม่บริสุทธิ์ มีกลิ่นกระเทียม เป็นอาวุธเคมี มีคุณสมบัติทำลายเมื่อสัมผัส ภายใน 24 ชั่วโมง จะมีผลให้ผู้ที่โดนนั้นเกิดการคัน ต่อมากลายเป็นแผลพุพองบริเวณที่โดน ผิวหนังและเยื่อบุทางเดินอาหาร/ทางเดินหายใจ ทำให้เกิดแผลพุพองที่ผิวหนัง เยื่อบุตาอีกเสบ ระคายเคืองทางเดินหายใจ และน้ำท่วมปอดได้ โดยเยอรมันต้องการยารักษา
+แก๊สมัสตาร์ดยังเป็นสารก่อมะเร็งอีกด้วยแก๊สมัสตาร์ดในการทดลองปกติเวลาโดนแก๊สนี้แล้วจะเกิดแผลพุพอง มีการให้กรีดเนื้อนักโทษแล้วเอาไปป้ายที่แผล หรือให้ดมในภาวะของเหลว หรือฉีดเข้าไปในร่างกาย เมื่อโดนแล้วจะทำให้บวมเป่งและเจ็บปวดมาก บางคนให้ทดลองโดยการกระทืบหลอดแก๊สให้แตกในห้องอบแก๊ส แล้วให้ยืนดม ของเหลวจะระเหยกลายเป็นไอ โดยปกติแล้วเหยื่อจะหมดสติ ทำแบบนี้ 150 คน ระบบหายใจจะถูกทำลาย การทดลองนี้ใช้เหยื่อ 220 คน ในจำนวนนี้ตาย 50 คน</p>
+    			</div><br>
+				<img class="mySlides" src="2.4-2.jpg">
+                <img class="mySlides" src="2th.me_1286788.jpg">
+                <img class="mySlides" src="Dx5-dMZUUAA6x5j.jpg">
+                <img class="mySlides" src="Dx573ItVsAEBF4s.jpg">
+                <img class="mySlides" src="main-qimg-a9b2cef2edd05bce9972f466bbd06cf2.png">
+                <img class="mySlides" src="mustard-gas-03.jpg">
+                <img class="mySlides" src="mustard-gas-04.jpg">
+                <img class="mySlides" src="mustard-gas-06.jpg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

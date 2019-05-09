@@ -1,0 +1,57 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">ใครก่ออาชญากรรมมากกว่ากัน</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>กู</label>
+    					<label class="text-02"><input type="radio" name="optradio">มึง</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">Bone,Muscle and Nerve Regeneration and Bone Transplantation Experiments</p>
+    			<div class="content">
+    				<h2 class="text-01">การทดลองปลูกกระดูกการเพาะกระดูกกล้ามเนื้อและเส้นประสาทให้เกิดใหม่</h2><br>
+    				<p class="text-02">เป็นการทดลองที่โหดร้ายที่มาก โดยการตัดเอาแขนขาไปเย็บติดกับทหารเยอรมันที่บาดเจ็บเพื่อปลูกถ่ายและยังมีเอากระดูกหรือกล้ามเนื้อไปปลูกถ่ายให้เหยื่อคนอื่นๆที่ถูกทุบกระดูกให้แตก การปลูกกระดูก และการเข้าเฝือกต่อกระดูก ตัดกล้ามเนื้อออก หรือฉีดเชื้อโรคเข้ากระดูก 
+เหยื่อที่ถูกตัดอวัยวะส่วนใหญ่ถูกฆ่า ที่เหลือพิการตลอดชีวิต</p>
+    			</div><br>
+				<img class="mySlides" src="326563.jpg">
+                <img class="mySlides" src="Dx543RGV4AAvyCq.jpg">
+                <img class="mySlides" src="pseudo-medical-experiments.jpg">
+                <img class="mySlides" src="scan00076.jpg">
+                <img class="mySlides" src="TRANSPLANT-EXPEIMENT.jpeg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

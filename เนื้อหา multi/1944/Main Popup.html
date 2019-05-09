@@ -1,0 +1,58 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">ถ้าหากว่ามีคนชวนคุณให้มาเป็นส่วนหนึ่งในการทดลอง และมีค่าตอบแทนจำนวนมากให้ คุณจะยินยอมไหม</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>Yes</label>
+    					<label class="text-02"><input type="radio" name="optradio">No</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">Sea-water Experiments : การทดลองน้ำทะเล</p>
+    			<div class="content">
+    				
+    				<p class="text-02">การทดลองนี้เพื่อประโยชน์กองทัพอากาศและกองทัพเรือ ตามสมมุติฐานว่าถ้าทหารเหล่านี้ต้องไปลอยอยู่ในทะเล จะทำอย่างไรให้น้ำทะเลดื่มได้ เหยื่อการทดลอง 44 คน ถูกให้งดอาหารนาน 5-9 วัน
+โดยนักโทษถูกหลอกมาว่าจะให้มาทำความสะอาด เนื่องจากต้องหลอกว่าไม่ใช่น้ำทะเล จึงต้องปรุงรสไม่ให้เค็ม เรียกว่าน้ำเบอร์กาทิต (berkatit) แต่น้ำนี้ยังมีเกลือแร่ทุกอย่างเหมือนน้ำทะเลครบ สมมติฐานคือ คาดว่าต้องดื่มเกิน 6 วันจึงจะเป็นอันตราย และเสียชีวิตเมื่อดื่มเกิน 12 วัน
+การทดลองแบ่งออกเป็นกลุ่ม กลุ่มหนึ่งไม่ได้รับอาหารใดๆ เลย อีกกลุ่มได้รับอาหารเช่น ขนมปังกรอบ นมผง เนย ไขมัน นักโทษคนหนึ่งที่เคยโดนทดลองแล้วรอดมาได้เขาเล่าให้ฟังว่า ก่อนการทดลองจะได้รับอาหารก่อนหนึ่งสัปดาห์เต็ม (ถ้าสภาพร่างกายนักโทษผอมแห้ง มันจะไม่เหมือนสภาพทหารที่ลอยคอกลางทะเล) มีนักโทษประมาณ 40 คน ที่โดนทดลอง หลังจากนั้นโดนกรอกน้ำเค็มให้ดื่มโดยไม่ได้รับอาหาร สามครั้งต่อวัน ตอนเย็นเป็นน้ำสีเหลือง และเจาะตับไปตรวจ บางคนถูกเจาะน้ำไขสันหลัง มีการชั่งน้ำหนักด้วย ผ่านไปไม่กี่วันจะคลุ้มคลั่งเป็นบ้า เห็นภาพหลอน น้ำลาย ฟูมปาก เห่า ท้องร่วง ชักกระตุก ส่วนใหญ่จะเสียสติไปเลยหรือไม่ก็ตาย</p>
+    			</div><br>
+				<img class="mySlides" src="2th.me_1286792.jpg">
+                <img class="mySlides" src="766796.jpg">
+                <img class="mySlides" src="Dx5rps6U0AEpEuM.jpg">
+                <img class="mySlides" src="index.jpg">
+                <img class="mySlides" src="NZ_8.jpg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

@@ -1,0 +1,60 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">คุณสนับสนุนการทดลองในมนุษย์หรือไม่</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>Yes</label>
+    					<label class="text-02"><input type="radio" name="optradio">No</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">The Milgram Obedience Experiment : การทดลองเชื่อฟังคำสั่งของ สแตนลีย์ มิลแกรม</p>
+    			<div class="content">
+    				
+    				<p class="text-02">ในปี 1961 สแตนลีย์ มิลแกรม เป็นศาสตราจารย์จากมหาวิทยาลัยเยล ได้ทำการทดลองกับอาสาสมัครว่าจะยอมทำร้ายผู้อื่นมากแค่ไหน เมื่อถูกผู้มีอำนาจกว่าสั่ง อาสาสมัครจะต้องตอบคำถามจากผู้วิจัย หากตอบผิดจะต้องกดปุ่มปล่อยกระแสไฟฟ้าให้กับเหยื่ออีกคนหนึ่ง โดยเพิ่มระดับความแรงของกระแสไฟฟ้าไปเรื่อยๆ
+ผลการทดลองพบว่า มนุษย์ส่วนใหญ่ยอมทำร้ายคนอื่นเพียงเพื่อทำตามคำสั่งของผู้มีอำนาจเหนือกว่า (แต่การปล่อยไฟฟ้าเป็นการแสดง โดยที่ไม่บอกให้อาสาสมัครรู้มาก่อน ซึ่งผลเสียคือสภาพจิตใจของอาสาสมัครจะแย่ลงมากๆ)</p>
+    			</div><br>
+				<img class="mySlides" src="588bb648eac61.image.jpg">
+                <img class="mySlides" src="03154102_9292_600x435.jpg">
+                <img class="mySlides" src="4046856-3x2-600x400.jpg">
+                <img class="mySlides" src="ce504c7ee933f7.jpg">
+                <img class="mySlides" src="Horrifying-Experiments-05.jpg">
+                <img class="mySlides" src="methode_sundaytimes_prodmigration_web_bin_09ba5cf3-a702-4ea5-af0f-56dacc359303.jpg">
+                <img class="mySlides" src="milgram.jpg">
+                <img class="mySlides" src="PsychExpt.jpg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

@@ -1,0 +1,54 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">คุณอดนอนได้มากที่สุดกี่วัน</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>2 วัน</label>
+    					<label class="text-02"><input type="radio" name="optradio">3 วัน</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">อัลเบิร์ตตัวน้อย</p>
+    			<div class="content">
+    				
+    				<p class="text-02">ในปี1920 นักจิตวิทยา จอห์น วัตสัน ได้ให้ทารกน้อยที่ชื่อว่า อัลเบิร์ต เล่นกับหนูตัวหนึ่ง เมื่อใดก็ตามที่อัลเบิร์ตสัมผัสหนู วัตสันก็จะปล่อยเสียงน่ากลัวออกมา ผลสุดท้าย หนูน้อยอัลเบิร์ตก็กลัวการสัมผัสกับหนู และที่เลวร้ายไปกว่านั้น หนูน้อยคนนี้ไม่เคยหนีจากความกลัวนี้ได้ และกลายเป็นคนกลัว สุนัข กระต่าย และสัตว์ทุกอย่างที่มีขนไปด้วย</p>
+    			</div><br>
+				<img class="mySlides" src="1.png">
+                <img class="mySlides" src="2.png">
+                <img class="mySlides" src="Horrifying-Experiments-01.jpg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

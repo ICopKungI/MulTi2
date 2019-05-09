@@ -1,0 +1,58 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">ถ้าต้องเลือกระหว่าง true กับ false จะเลือกอะไร</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>True</label>
+    					<label class="text-02"><input type="radio" name="optradio">False</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">การทดลองสูตินารีเวชกับทาส</p>
+    			<div class="content">
+    				
+    				<p class="text-02">บิดาแห่งวิชาสูตินารีเวชสมัยใหม่ J. Marion Sims ถือได้ว่าเป็นหนึ่งในนักวิทยาศาสตร์ที่ถูกวิพากษ์วิจารณ์มากที่สุดเกี่ยวกับจริยธรรมการทดลอง การทดลองส่วนใหญ่ของเขาจะทำกับทาสผู้หญิง บีบบังคับผู้หญิงชาวแอฟริกันที่เป็นทาส มาฝ่าตัดเพื่อศึกษากระเพาะปัสสาวะและช่องคลอด เกือบทุกครั้งเขาไม่เคยวางยาสลบเลย เนื่องจากเขาให้เหตุผลว่าการผ่าตัดไม่น่าจะเจ็บมากอะไรมาก จึงไม่สมควรสิ้นเปลืองกับเรื่องไม่เป็นเรื่อง</p>
+    			</div><br>
+				<img class="mySlides" src="800px-Bergonic_chair.jpg">
+                <img class="mySlides" src="123329865.jpg">
+                <img class="mySlides" src="14466087218_9596493d1a_b.jpg">
+                <img class="mySlides" src="1483582062079.jpg">
+                <img class="mySlides" src="MMCQF3W7YJEJXBWNZCRI5R2KZ4.jpg">
+                <img class="mySlides" src="Reeve_41480.jpg">
+                <!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

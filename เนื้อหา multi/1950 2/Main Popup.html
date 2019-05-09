@@ -1,0 +1,60 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">คุณสามารถกำจัดปัญหาทุกอย่างในชีวิต แต่แลกกับการเข้ารับการทดลอง คุณจะยอมไหม
+</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>Yes</label>
+    					<label class="text-02"><input type="radio" name="optradio">No</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">The Asch Conformity Experiment</p>
+    			<div class="content">
+
+    				<p class="text-02">การทดลองนี้มีขึ้นช่วงปี 1950s เพื่อศึกษาแนวโน้มของคนในการปฏิบัติตามคนส่วนใหญ่ในสังคม ให้ผู้รับการทดลองเข้าไปอยู่ร่วมกันกับหน้าม้าอีกหลายๆ คนเพื่อตอบคำถามง่ายๆ ผ่านจอมอนิเตอร์ โดยต้องตอบทีละคน
+เริ่มตั้งแต่หน้าม้าคนแรกไล่ไปทีละคนจนถึงผู้เข้ารับการทดสอบที่นั่งอยู่เป็นคนสุดท้าย แต่ละคำถามหน้าม้าหลายๆ คนถูกกำหนดให้เลือกคำตอบที่ผิด จนกระทั่งข้อคำถามหลังๆ หน้าม้าทุกคนเลือกคำตอบที่ผิด เพื่อดูว่าผู้รับการทดลองเลือกตามคนส่วนใหญ่หรือว่าจะเลือกคำตอบที่ถูกกันแน่
+ผลลัพธ์ออกมาว่าคนส่วนใหญ่เลือกที่จะตอบข้อที่ผิดเพื่อให้เหมือนกับคนอื่นๆ มากกว่าการตอบข้อถูก แสดงให้เห็นว่าคนในสังคมเลือกที่จะคล้อยตามคนส่วนใหญ่แม้จะมีความคิดเป็นของตัวเองก็ตาม
+</p>
+    			</div><br>
+				<img class="mySlides" src="4-45.jpg">
+                <img class="mySlides" src="5_Psych.png">
+                <img class="mySlides" src="Asch_conformity_1955.jpg">
+                <img class="mySlides" src="images.jpg">
+                <img class="mySlides" src="maxresdefault.jpg"><!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+

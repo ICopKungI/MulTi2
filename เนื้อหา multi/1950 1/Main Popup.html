@@ -1,0 +1,58 @@
+<!--Main Popup-->
+<!--หมายเหตุ บรรทัดที่มี ... เป็นส่วนที่ใส่เนื้อหา-->
+<div class="box">
+	<a class="button" href="#popup1">Test</a>
+</div>
+<link rel="stylesheet" href="../../Popup_Css.css"/>
+<!------------------------------------------------------->
+<div id="popup1" class="overlay">
+	<div class="popup">
+			<center>
+				<h2 class="text-01">คุณเจอคนที่กำลังถูกทดลองอยู่ คุณจะเข้าไปช่วยเหลือไหม</h2>
+    			<div class="content">
+    				<form>
+    					<label class="text-02"><input type="radio" name="optradio" checked>Yes</label>
+    					<label class="text-02"><input type="radio" name="optradio">No</label>
+  					</form>
+    			</div>
+    			<br><a class="button" href="#popup2" href="#">ตกลง</a>
+			</center>
+
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+			<center>
+				<p class="text-01">Project MK ULTRA : ยาควบคุมมนุษย์</p>
+    			<div class="content">
+    				
+    				<p class="text-02">โครงการเอ็มเคอัลทรา หรือ CIA mind-control research program งานทดลองการควบคุมพฤติกรรมมนุษย์ของ CIA (Central Intelligence Agencies) เพื่อรับมือกับประเทศที่เป็นศัตรูต่ออเมริกา ที่กลัวว่าประเทศเหล่านั้นจะเล่นของใส่ เลยต้องหาทางกันไว้ก่อนที่จะโดนของ ทดลองด้วยการนำนักโทษยาเสพติดมาฉีดยา เพื่อดูการเปลี่ยนแปลงจิตใจและสมอง ต่อมาก็ทดลองฉีดยาหลอนประสาท LSD (Lysergic acid diethylamide) คราวนี้มีผู้ถูกทดลองทุกระดับ ตั้งแต่รากหญ้าจนถึงยอดอ่อน ทั้งคนในประเทศและชาวต่างชาติ แต่รัฐบาลก็ออกมาปฏิเสธว่าไม่ได้ท้ำ... ไม่ได้ทำ! จากนั้นในปี 1973 CIA ถูกสั่งให้ทำลายเอกสารทั้งหมด และไฟล์โครงการนี้ก็หายวับ จับคนทำก็ไม่ได้เพราะหลักฐานไม่เพียงพอ</p>
+    			</div><br>
+				<img class="mySlides" src="220px-DeclassifiedMKULTRA.jpg">
+                <img class="mySlides" src="45451.jpg">
+                <img class="mySlides" src="89542.jpg">
+                <img class="mySlides" src="lsd-adminster.jpg">
+                <img class="mySlides" src="mkultra-9.jpg">
+                <img class="mySlides" src="index.jpg">
+                <!--ถ้ามีหลายรูปภาพก็Copyบรรทัดนี้แล้วว่างต่อบรรทัดถัดไป-->
+			</center>
+	</div>
+</div>
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+
