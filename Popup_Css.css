@@ -59,7 +59,7 @@ h1 {
 	  left:0px;
 	  bottom:0px;
 	  position: absolute;
-  	object-fit: cover;/* 縦横比を保ったまま画像を中央に配置して切り抜き */
+  	object-fit: cover;
 }
 
 .popup h2 {
@@ -94,7 +94,6 @@ h1 {
     width: 70%;
   }
 }
-/*--------------------------------------------------------*/
 
 .sec{
 	  max-height: 600px;
@@ -127,4 +126,40 @@ h1 {
 p{
   margin-top: 5px;
   margin-bottom: 0px;
+}
+
+.left{
+  display:inline-block;
+  margin: auto;
+  margin-left: 0px;
+}
+.right{
+    display:inline-block;
+    margin: auto;
+    margin-right: 0px;
+}
+.center{
+    display:inline-block;
+}
+:root{
+  --w_r:200px;
+  --w_b:200px;
+}
+#color_r{
+  background: red;
+  width: var(--w_r);/*ตัวแปร*/
+  height: 30px;
+}
+#color_b{
+  background: blue;
+  width: var(--w_b);/*ตัวแปร*/
+  height: 30px;
+}
+#vote{
+   margin:auto;
+   top:0px;
+   right:0px;
+   left:0px;
+   bottom:0px;
+   position: absolute;
 }

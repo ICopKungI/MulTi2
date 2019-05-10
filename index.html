@@ -3,6 +3,7 @@
 		<meta charset=utf-8 />
 		<title>Human Experiment</title>
 		<link rel="stylesheet" href="Popup_Css.css"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="">
 	</head>
 	<body>
 		<img src="https://raw.githubusercontent.com/ICopKungI/MulTi2/master/image/0.jpg" class="main">
@@ -57,9 +58,9 @@
 	<script type="text/javascript">
   		window.location.assign("#popup1")
   		function countDown(){
+        	console.log(seconds)
         	seconds--
         	if (seconds == 0){
-        		console.log(seconds)
         		window.location.assign("#")
           		clearInterval(i);
         	}
