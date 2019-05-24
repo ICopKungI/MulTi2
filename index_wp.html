@@ -36,32 +36,32 @@
 		<a href="#popup35"><image class="pic18 picright" src="https://github.com/ICopKungI/MulTi2/blob/master/image/image%20year/1972.png?raw=true"/></a>
 		<a href="#popup37"><image class="pic19 picleft" src="https://github.com/ICopKungI/MulTi2/blob/master/image/image%20year/2007.png?raw=true"/></a>
 		<a href="#popup39"><image class="pic20 picright" src="https://github.com/ICopKungI/MulTi2/blob/master/image/image%20year/2015.png?raw=true"/></a>
-		<div id="popup0" class="over">
+		<div id="popup0" class="overlay">
 			<div class="popup">
 				<div id="vidBox" style="z-index: 100002;">
   					<div id="videCont">
-    					<video autoplay>
-      						<source src="http://www.zp11361.tld.122.155.18.18.no-domain.name/Multi2/ClipOpen.mp4" type="video/mp4">
+    					<video id="pause" autoplay>
+      						<source src="http://www.zp11361.tld.122.155.18.18.no-domain.name/Multi2/projectmulti2.mp4" type="video/mp4">
    						</video>
 					</div>
 				</div>
 			</div>
 		</div>
-<div id="popup1" class="over">
-	<div class="popup">
-		<center>
-			<h2 class="text-01">คุณถูกสั่งให้ไปตัดนิ้วคนมาหนึ่งนิ้ว ทำตามจะไม่ถูกตัดมือ ไม่ทำตามจะถูกตัดมือ</h2>
-    		<div class="content">
-    			<form>
-    				<label class="text-02"><input type="radio" name="optradio" checked>ตัดนิ้วคน</label>
-    				<label class="text-02"><input type="radio" name="optradio">ไม่ตัดนิ้วคน</label>
-  				</form>
-    		</div>
-    		<br><a class="button" href="#popup2" href="#">ตกลง</a>
-		</center>
-	</div>
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <center>
+      <h2 class="text-01">คุณคือผู้โชคดีได้รับเชิญให้เข้าร่วมการทดลองกับเรา</h2>
+        <div class="content">
+          <form>
+            <label class="text-02"><input type="radio" name="optradio" checked>Yes</label>
+            <label class="text-02"><input type="radio" name="optradio">No</label>
+          </form>
+        </div>
+        <br><a class="button" href="#popup2" href="#">ตกลง</a>
+    </center>
+  </div>
 </div>
-<div id="popup2" class="over">
+<div id="popup2" class="overlay">
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 			<center>
@@ -83,12 +83,13 @@
 </div>
 	</body>
 	<script type="text/javascript">
-
+    var myVideo = document.getElementById("video1"); 
 		window.location.assign("#popup0")
 			function countDown(){
     			console.log(seconds)
     			if (seconds <= 0){
         			window.location.assign("#")
+              myVideo.play(); 
         			clearInterval(i);
     			}
     			seconds--
@@ -184,7 +185,7 @@ h1 {
   background: #c50e0e;
 }
 
-.over {
+.overlay {
   position: fixed;
   top: 40px;
   bottom: 0;
@@ -195,7 +196,7 @@ h1 {
   visibility: hidden;
   opacity: 0;
 }
-.over:target {
+.overlay:target {
   visibility: visible;
   opacity: 1;
 }
