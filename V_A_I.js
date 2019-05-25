@@ -66,7 +66,7 @@ function carousel() {
 	if (myIndex_3 > x_3.length) {myIndex_3 = 1}
 		x_3[myIndex_3-1].style.display = "block";
 	var i_4;
-	/*var x_4 = document.getElementsByClassName("mySlides4");
+	var x_4 = document.getElementsByClassName("mySlides4");
 	for (i_4 = 0; i_4 < x_4.length; i_4++) {
 	   	x_4[i_4].style.display = "none";  
 	}
@@ -192,6 +192,6 @@ function carousel() {
 	}
 	myIndex_19++;
 	if (myIndex_19 > x_19.length) {myIndex_19 = 1}
-		x_19[myIndex_19-1].style.display = "block";*/
+		x_19[myIndex_19-1].style.display = "block";
 	setTimeout(carousel, 2000); // Change image every 2 seconds
 }
