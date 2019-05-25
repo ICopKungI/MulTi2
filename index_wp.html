@@ -2,7 +2,7 @@
 	<head>
 		<meta charset=utf-8 />
 		<title>Human Experiment</title>
-		<link rel="icon" type="image/png" sizes="16x16" href="">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/ICopKungI/MulTi2/master/image/icon.ico">
 	</head>
 	<body>
 		<img src="https://raw.githubusercontent.com/ICopKungI/MulTi2/master/image/0.jpg" class="main">
@@ -83,13 +83,13 @@
 </div>
 	</body>
 	<script type="text/javascript">
-    var myVideo = document.getElementById("video1"); 
+    var myVideo = document.getElementById("pause"); 
 		window.location.assign("#popup0")
 			function countDown(){
     			console.log(seconds)
     			if (seconds <= 0){
         			window.location.assign("#")
-              myVideo.play(); 
+              myVideo.pause();
         			clearInterval(i);
     			}
     			seconds--
