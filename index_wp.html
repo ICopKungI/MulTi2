@@ -823,7 +823,6 @@
       button.style.display = "none";
     }
     function check(){
-          console.log(myVideo.ended)
           if (myVideo.ended){
               window.location.assign("#")
               myVideo.volume = 0;
@@ -1116,6 +1115,21 @@ h1 {
   background: #c50e0e;
 }
 
+.overlay_v {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay_v:target {
+  visibility: visible;
+  opacity: 1;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -1131,20 +1145,6 @@ h1 {
   opacity: 1;
 }
 
-.overlay_v {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay_v:target {
-  visibility: visible;
-  opacity: 1;
-}
 .popup {
     padding: 20px;
     background: #000000f0;
